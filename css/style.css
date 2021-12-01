@@ -4,4 +4,35 @@
 body{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    background: black;
+}
+
+.square{
+    width: 100%;
+    color: white ;
+    text-align: center;
+    padding-top: 50px;
+    transition: 1s;
+    font-size: 100px;
+    animation: neon ease-in-out infinite 2s ;
+}
+
+@keyframes neon {
+    0%{
+        color: lightblue;
+        text-shadow: 0 0 20px lightblue;
+    }
+    20%{
+        color: lightblue;
+        text-shadow: 0 0 20px lightblue,
+                     0 0 40px blue,
+                     0 0 60px rgb(19, 19, 236);
+    }
+
+    40%{
+        color: blueviolet;
+        text-shadow: 0 0 40px violet,
+                     0 0 60px purple,
+                     0 0 80px blue;
+    }
 }
